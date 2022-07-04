@@ -8,8 +8,10 @@
     <title>Container & Spacing</title>
   </head>
   <body>
+    <!-- Spcaing scales: https://tailwindcss.com/docs/customizing-spacing#default-spacing-scale -->
+
     <!-- Container -->
-    <div>
+    <div class="container mx-auto">
       <article>
         <h3>Article One</h3>
         <p>
@@ -21,12 +23,42 @@
       </article>
 
       <!-- Margin -->
+      <div class="bg-slate-100 m-2">Margin all-around 2</div>
+      <div class="bg-slate-100 ml-4">Margin left 4</div>
+      <div class="bg-slate-100 mr-4">Margin right 4</div>
+      <div class="bg-slate-100 mt-4">Margin top 4</div>
+      <div class="bg-slate-100 mb-4">Margin bottom 4</div>
+      <div class="bg-slate-100 ml-[20px]">Margin left [arbitrary values]</div>
 
       <!-- Padding -->
+      <div class="bg-slate-100 p-2">Padding all-around 2</div>
+      <div class="bg-slate-100 pl-4">Padding left 4</div>
+      <div class="bg-slate-100 pr-4">Padding right 4</div>
+      <div class="bg-slate-100 pt-4">Padding top 4</div>
+      <div class="bg-slate-100 pb-4">Padding bottom 4</div>
+      <div class="bg-slate-100 pl-[20px]">Padding left [arbitrary values]</div>
 
       <!-- Space Between X -->
+      <div class="flex mt-24 space-x-4">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+        <div>Item 5</div>
+        <div>Item 6</div>
+        <div>Item 7</div>
+      </div>
 
       <!-- Space Between Y -->
+      <div class="flex flex-col mt-24 space-y-4">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+        <div>Item 5</div>
+        <div>Item 6</div>
+        <div>Item 7</div>
+      </div>
     </div>
   </body>
 </html>
